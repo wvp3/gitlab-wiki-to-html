@@ -3,7 +3,7 @@ set -e
 scriptdir="$(dirname $(readlink -f $0))"
 outputdir="$3"
 test -n "$outputdir" && test -d "$outputdir" || { echo "usage: $0 https://https://gitlab.jhuapl.edu/nationalhealth/essence/essence/-/wikis/home  user/project local-output-dir/ [_gitlab_session cookie hex value]"; exit 1; }
-cd "$outputdir" 
+#cd "$outputdir" 
 mkdir -p html/
 
 ### 0. FIXUP COMMANDLINE
